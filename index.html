@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+  <title>Calculator</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <div class="projectName navbar-brand">
+          <a href="#">Calculator</a>
+        </div>
+        <!-- end class projectName -->
+      </div>
+      <!-- end class navbar-header -->
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end class container-fluid -->
+  </div>
+  <!-- end class navbar -->
+  <h1 class="text-center">Calculator</h1>
+  
+  <div class="container" id="calculator">
+    <div class="screen">
+    </div>
+    <div class="numbers">
+      <div class="row row-grid" id="numbers">
+        <div class="col-md-3 col-xs-3" id="num-7">
+          <img src="img/big_trouble.jpg" alt="7" class="img-responsive">
+        </div> <!-- end class col-md-3 id num-7 -->
+
+        <div class="col-md-3 col-xs-3" id="num-8">
+          <img src="img/randy-1.jpg" alt="8" class="img-responsive">
+        </div> <!-- end class col-md-3 id num-8 -->
+
+        <div class="col-md-3 col-xs-3" id="num-9">
+          <img src="img/randy-2.jpg" alt="9" class="img-responsive">
+        </div> <!-- end class col-md-3 id num-9 -->
+
+        <div class="col-md-3 col-xs-3" id="btn-Divide">
+          <img src="img/clint_eastwood.jpg" alt="/" class="img-responsive">
+        </div> <!-- end class col-md-3 id btn-Slash -->
+
+        <div class="col-md-3 col-xs-3" id="num-4">
+          <img src="img/clint_eastwood.jpg" alt="4" class="img-responsive">
+        </div> <!-- end class col-md-3 id num-4 -->
+
+        <div class="col-md-3 col-xs-3" id="num-5">
+          <img src="img/randy-2.jpg" alt="5" class="img-responsive">
+        </div> <!-- end class col-md-3 id num-5 -->
+            
+        <div class="col-md-3 col-xs-3" id="num-6">
+          <img src="img/randy-1.jpg" alt="6" class="img-responsive">
+        </div> <!-- end class col-md-3 id num-6 -->
+
+        <div class="col-md-3 col-xs-3" id="btn-Times">
+          <img src="img/big_trouble.jpg" alt="*" class="img-responsive">
+        </div> <!-- end class col-md-3 id btn-Times -->
+
+        <div class="col-md-3 col-xs-3" id="num-1">
+          <img src="img/big_trouble.jpg" alt="1" class="img-responsive">
+        </div> <!-- end class col-md-3 id num-1 -->
+
+        <div class="col-md-3 col-xs-3" id="num-2">
+          <img src="img/randy-1.jpg" alt="2" class="img-responsive">
+        </div> <!-- end class col-md-3 id num-2 -->
+
+        <div class="col-md-3 col-xs-3" id="num-3">
+          <img src="img/randy-2.jpg" alt="3" class="img-responsive">
+        </div> <!-- end class col-md-3 id num-3 -->
+
+        <div class="col-md-3 col-xs-3" id="btn-Minus">
+          <img src="img/clint_eastwood.jpg" alt="-" class="img-responsive">
+        </div> <!-- end class col-md-3 id btn-Minus -->
+
+        <div class="col-md-3 col-xs-3" id="num-0">
+          <img src="img/clint_eastwood.jpg" alt="0" class="img-responsive">
+        </div> <!-- end class col-md-3 id num-0 -->
+
+        <div class="col-md-3 col-xs-3" id="btn-Decimal">
+          <img src="img/randy-2.jpg" alt="." class="img-responsive">
+        </div> <!-- end class col-md-3 id btn-Decimal -->
+            
+        <div class="col-md-3 col-xs-3" id="btn-Equals">
+          <img src="img/randy-1.jpg" alt="=" class="img-responsive">
+        </div> <!-- end class col-md-3 id btn-Equals -->
+
+        <div class="col-md-3 col-xs-3" id="btn-Plus">
+          <img src="img/big_trouble.jpg" alt="+" class="img-responsive">
+        </div> <!-- end class col-md-3 id btn-Plus -->
+
+      </div> <!-- end class row id work -->
+
+
+    </div><!-- end div numbers -->
+  </div> <!-- end div calculator -->
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- parallax scroll -->
+  <script type="text/javascript">
+    var $root = $('html, body');
+    $('.navbar-nav a').click(function() {
+      var href = $.attr(this, 'href');
+      $root.animate({
+        scrollTop: $(href).offset().top
+      }, 500, function() {
+        window.location.hash = href;
+      });
+      return false;
+    });
+  </script>
+</body>
+
+</html>

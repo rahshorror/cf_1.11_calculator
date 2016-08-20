@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    padding-top: 3.125em;
+    position: relative;
+}
+
+.anchor {
+    padding-top: 5%;
+}
+
+#calculator {
+    background-color: white;
+    max-width: 320px;
+    margin: 0 auto;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+.screen {
+    max-width: 310px;
+    height: 50px;
+    border: darkslategrey solid 1px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.numbers {
+    position: static;
+    max-width: 95%;
+    max-height: 95%;
+}
+
+#buttons * {
+    position: static;
+    background-color: paleturquoise;
+    max-width: 20%;
+    max-height: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+[class*="col-"] {
+    margin-bottom: 0.9375em;
+}
+
+
+/* Typography */
+
+.navbar-brand {
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.projectName a {
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.nav a {
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
