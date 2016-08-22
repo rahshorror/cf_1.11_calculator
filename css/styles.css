@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    padding-top: 3.125em;
+    position: relative;
+}
+
+.anchor {
+    padding-top: 5%;
+}
+
+#calculator {
+    background-color: white;
+    max-width: 320px;
+    margin: 0 auto;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+.screen {
+    max-width: 310px;
+    height: 50px;
+    border: darkslategrey solid 1px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.numbers {
+    max-width: 95%;
+    max-height: 95%;
+    margin: 0 auto;
+}
+
+#buttons {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+
+[id*="num-"],
+[id*="btn-"] {
+    background-color: #95DCD8;
+    max-width: 24%;
+    max-height: 20%;
+    border-radius: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+[class*="col-"] {
+    margin-bottom: 2px;
+}
+
+/* Typography */
+
+/* @font-face {
+    font-family: Lato;
+    src: url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900&subset=latin,latin-ext");
+} */ 
+
+.navbar-brand {
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.projectName a {
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.nav a {
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
